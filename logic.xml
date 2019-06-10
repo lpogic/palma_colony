@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<logic>
+    <devices>
+        <device type="fxml" class="button" id="I1">
+            <output id="s1"/>
+        </device>
+        <device type="fxml" class="button" id="I2">
+            <output id="s2"/>
+        </device>
+        <device type="fxml" class="lamp" id="Q1">
+            <input id="s21"/>
+        </device>
+        <device type="file" class="file->field" file="a.txt" field="txt1">
+            <input id="rs1"/>
+        </device>
+        <device type="file" class="field->file" file="a.txt" field="txt2">
+            <input id="rs2"/>
+        </device>
+    </devices>
+    <functions>
+        <function class="and">
+            <input id="s1"/>
+            <input id="s2"/>
+            <output id="s12"/>
+        </function>
+        <function class="or">
+            <input id="s2"/>
+            <input id="s1"/>
+            <output id="s21"/>
+        </function>
+        <function class="red">
+            <input id="s2"/>
+            <output id="rs2"/>
+        </function>
+        <function class="red">
+            <input id="s1"/>
+            <output id="rs1"/>
+        </function>
+    </functions>
+</logic>

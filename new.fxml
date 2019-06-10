@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane fx:id="border" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.DefaultController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="Q2" fill="#9d9d9d" layoutX="150.0" layoutY="306.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="Q1" fill="#9d9d9d" layoutX="67.0" layoutY="306.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <ToggleButton fx:id="I2" layoutX="137.0" layoutY="236.0" mnemonicParsing="false" text="I2" />
+            <Label layoutX="59.0" layoutY="298.0" text="Q1" />
+            <Label layoutX="142.0" layoutY="298.0" text="Q2" />
+            <ToggleButton fx:id="I1" layoutX="54.0" layoutY="236.0" mnemonicParsing="false" text="I1" />
+            <TextField fx:id="txt1" layoutX="26.0" layoutY="100.0" />
+            <TextField fx:id="txt2" layoutX="26.0" layoutY="167.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
